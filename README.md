@@ -25,7 +25,7 @@
    - [Shell Install](#shell-install)
    - [Zsh Customization](#zsh-customization)
 
-4. [Tmux Keybindings](#tmux-keybindings)
+4. [Vim Keybindings](#vim-keybindings)
 
    - [Default Vim Navigation](#default-vim-navigation)
    - [Editing and Manipulation](#editing-and-manipulation)
@@ -37,7 +37,7 @@
    - [Buffer and Window Management](#buffer-and-window-management)
    - [Miscellaneous Commands](#miscellaneous-commands)
 
-5. [Neovim Keybindings](#neovim-keybindings)
+5.[Tmux Keybindings](#tmux-keybindings)
 
    - [Session Management](#session-management)
    - [Window Management](#window-management)
