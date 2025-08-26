@@ -9,12 +9,14 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# Plugins - make sure 'forgit' plugin is cloned to ~/.oh-my-zsh/custom/plugins/forgit
 plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting 
     fast-syntax-highlighting
     zsh-autocomplete
+    forgit
     )
 
 source $ZSH/oh-my-zsh.sh
@@ -58,7 +60,9 @@ _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
 
-source ~/.fzf-git.sh/fzf-git.sh
+# Forgit configuration to use delta for previews
+#export FORGIT_DIFF_PREVIEW_COMMAND='delta'
+#export FORGIT_LOG_PREVIEW_COMMAND='delta'
 
 # History
 HISTSIZE=5000
@@ -74,5 +78,7 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 
+# ---- ALIASES ----
 alias cd="z"
 alias config="/usr/bin/git --git-dir=/home/linuxer/.cfg/ --work-tree=/home/linuxer"
+alias activate-pyenv='source ~/py-env/bin/activate'
